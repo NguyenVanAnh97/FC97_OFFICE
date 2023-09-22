@@ -378,6 +378,40 @@ footer {
   .nav .navCloseBtn {
     display: none;
   }
+
+  .line_birday {
+    animation: marquee 15s linear infinite; /* Sử dụng animation để chạy text */
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+    font-size: 12px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .line_birday p span {
+    color: rgb(229, 19, 19);
+  }
+
+  .line_birday p  {
+    font-weight: 600;
+  }
+
+  .line_birday p:nth-child(2){
+    color: red;
+    font-size: 25px;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0); /* Di chuyển text bắt đầu từ phải ra trái */
+    }
+    to {
+      transform: translateX(-100%); /* Di chuyển text đến phía trái */
+    }
+  }
   
   /* responsive */
   @media screen and (max-width: 1160px) {
@@ -393,6 +427,7 @@ footer {
       padding: 15px 50px;
     }
   }
+  
   @media screen and (max-width: 767px) {
     .nav .navOpenBtn,
     .nav .navCloseBtn {
@@ -400,7 +435,8 @@ footer {
     }
     .nav {
       padding: 15px 20px;
-      justify-content: space-around;
+      padding-left: 0;
+     
     }
     .nav .nav-links {
       position: fixed;
@@ -422,7 +458,7 @@ footer {
     }
     .nav .navOpenBtn {
       color: #fff;
-      font-size: 20px;
+      font-size: 30px;
       cursor: pointer;
     }
     .nav .navCloseBtn {
