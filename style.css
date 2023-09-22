@@ -316,7 +316,7 @@ table {
 }
 
 .main_footer {
-    background: #1e2222;
+    background: #11101d;
     color: #fff;
     padding: 20px 50px;
     display: flex;
@@ -340,7 +340,7 @@ footer {
 }
 .nav {
     padding: 15px 200px;
-    background: #1e2222;
+    background: #11101d;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
   }
