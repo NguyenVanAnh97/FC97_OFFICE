@@ -184,7 +184,6 @@ table {
 .vace {
     margin: 1% 5%;
     border-radius: 15%;
-    padding: 5% 0 0;
 }
 
 .va1 {
@@ -380,12 +379,13 @@ footer {
   }
 
   .line_birday {
-    animation: marquee 15s linear infinite; /* Sử dụng animation để chạy text */
+    animation: marquee 1s linear infinite alternate-reverse; /* Sử dụng animation để chạy text */
     text-align: center;
     margin-top: 10px;
     overflow: hidden;
-    font-size: 12px;
+    font-size: 13px;
     max-width: 100%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -401,15 +401,19 @@ footer {
 
   .line_birday p:nth-child(2){
     color: red;
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .date_day {
+    padding: 10px 5%;
   }
 
   @keyframes marquee {
     from {
-      transform: translateX(0); /* Di chuyển text bắt đầu từ phải ra trái */
+      transform: translateX(10px); /* Di chuyển text bắt đầu từ phải ra trái */
     }
     to {
-      transform: translateX(-100%); /* Di chuyển text đến phía trái */
+      transform: translateX(-10px); /* Di chuyển text đến phía trái */
     }
   }
   
