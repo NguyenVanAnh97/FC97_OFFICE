@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="splide-skyblue.min.css" />
     <link rel="stylesheet" href="splide.min.css" />
     <link rel="stylesheet" href="splide-core.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
 "></script>
     <script>
@@ -18,7 +19,7 @@
           focus: "center",
           perPage: 1,
           autoScroll: {
-            speed: 1,
+            speed: 0.5,
           },
         }).mount(window.splide.Extensions);
       });
@@ -26,8 +27,8 @@
     <title>97 HOME - Website chính thức của CLUB 1997 NGÔ ĐẠO</title>
   </head>
   <body>
-    <div class="navbar">
-      <!-- Logo -->
+ <!--  <div class="navbar">
+      
       <div class="header">
         <div class="logo">
           <a href="#"
@@ -35,7 +36,7 @@
           /></a>
         </div>
 
-        <!-- Các mục menu -->
+        
         <div class="nav_menu">
           <a href="#" class="color_text active">Trang chủ</a>
           <a href="#team" class="color_text">Đội hình</a>
@@ -43,7 +44,22 @@
           <a href="#" class="color_text">Liên hệ</a>
         </div>
       </div>
-    </div>
+    --> 
+    <nav class="nav">
+     
+      <a href="#" class="logo"><img src="logo.svg" alt="Logo" width="250" height="200"
+        /></a>
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="#" class="color_text active">Trang chủ</a></li>
+        <li><a href="#team" class="color_text">Đội hình</a></li>
+        <li> <a href="#" class="color_text">Kết quả</a></li>
+        <li><a href="#footer" class="color_text">Liên hệ</a></li>
+      </ul>
+
+      <i class="uil uil-bars navOpenBtn"></i>
+    </nav>
     <div
       class="splide vace"
       role="group"
@@ -83,7 +99,7 @@
           <p>
             Một đội bóng với tinh thần thi đấu quả cảm, lòng quyết tâm rực cháy
             của từng cầu thủ trên sân. Luôn mang trong mình tinh thần không bỏ
-            cuộc, được rèn rũa từ những trận đấu đỉnh cao.
+            cuộc, được rèn rũa từ những trận thi đấu đỉnh cao.
           </p>
         </div>
         <div class="info">
@@ -254,10 +270,10 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="main_footer">
         <div class="left">
-          <img src="logo.svg" alt="logo" width="200" />
+          <a href="#"><img src="logo.svg" alt="logo" width="100" /></a>
           <p>FC 1997 Office Website</p>
           <p>Ngô Đạo - Tân Hưng - Sóc Sơn - Hà Nội</p>
           <p>Copyright © by VA</p>
