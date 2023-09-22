@@ -385,7 +385,6 @@ footer {
     overflow: hidden;
     font-size: 13px;
     max-width: 100%;
-    width: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
