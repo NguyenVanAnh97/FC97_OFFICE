@@ -439,6 +439,11 @@ a {
   margin-left: 0px;
 }
 
+#countdown {
+  font-size: 12px;
+  font-weight: 700;
+}
+
 /* responsive */
 @media screen and (max-width: 1160px) {
   .nav {
