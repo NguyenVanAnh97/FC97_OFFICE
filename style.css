@@ -372,11 +372,18 @@ table {
 }
 
 .avatar img:hover {
-  scale: 1.05;
+  transform: scale(1.05);
   transition: 0.5s all;
   cursor: pointer;
 }
 
+.imgfixed {
+  transition:0.5s;
+}
+
+.imgfixed:hover {
+  transform: scale(1.05);
+}
 .left p:nth-child(2) {
   margin-top: 10px;
 }
